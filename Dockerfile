@@ -12,4 +12,8 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+RUN uname -a
+RUN free -h
+RUN df -h
+
 CMD ["python", "main.py"]
